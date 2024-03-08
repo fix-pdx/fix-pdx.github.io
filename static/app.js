@@ -5,25 +5,27 @@ let fail = 0;
 
 const conclusion = () => {
     let imgWrap = document.getElementById("img-wrap")
-    imgWrap.style.display = "block"
+    imgWrap.style.display = "flex"
 
     let downloadBtn = document.getElementById("download-btn")
 
-    if (success > fail){
-        document.getElementById("g-post").style.display = "block"
+    if (success > fail){ // success
+        document.getElementById("s-post").style.display = "block"
         downloadBtn.href = "/static/postcards/success.jpg"
         downloadBtn.download = "success.jpg"
-    } else { 
-        document.getElementById("b-post").style.display = "block"
+        document.getElementById("success-text").style.display = "block"
+    } else { // fail
+        document.getElementById("f-post").style.display = "block"
         downloadBtn.href = "/static/postcards/fail.jpg"
         downloadBtn.download = "fail.jpg"
+        document.getElementById("fail-text").style.display = "block"
     }
     document.getElementById("q-5").style.display = "none"
 }
 const scorer = (obj, q) => {
     console.log(obj)
 
-    if(obj == "sp"){ // add to score
+    if(obj == "success"){ // add to score
         success ++;
     } else {
         fail ++;

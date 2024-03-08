@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Measure 110</title>
     <script src="/static/app.js" defer></script>
     <link href="/static/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Measure 110</h1>
+    <!-- <div id="header">
+        <h1>Measure 110 can fix PDX</h1>
+    </div> -->
 
     <div class="intro-wrap" id="q-0">
-        <h1>Measure 110</h1>
-        <p>Measure 110 is a law that was passed in Portland OR back in 2020. This law decriminilzed possession of drugs. Portlanders throughout the city have expressed their dissatisfaction with how Portland implemented this law. It is now your job as the new Mayor to implement Measure 110 effectivly.</p>
+        <p>In an attempt to relieve the rampant drug use issue, Portland officials proposed a new law named "Measure 110" back in February 2021. This law tried to mimic similar ideas that have been successfully implemented in several European countries. Measure 110 aimed to lower arrests and encourage Portland drug users to seek help by decriminalizing the possession of narcotics. However, due to poor planning and questionable decisions, Portland failed to implement Measure 110 effectively. It is now your job as the new Mayor of Portland to make the right choices and enact Measure 110!</p>
         <span class="btn-wrap">
             <button onclick="scorer('begin', '0')">Begin</button>
         </span>
@@ -20,57 +21,73 @@
 
     <div class="q-wrap" id="q-1" style="display: none;">
         <h1>Question 1</h1>
-        <h4>A. Spend money to develop rehabliltation services before implementing Measure 100</h4>
-        <h4>B. Spend money during Measure 110 (after implementing), to develop rehabliltation services</h4>
+        <h4>A. Spend money to develop rehabliltation services before implementing Measure 110.</h4>
+        <h4>B. Spend money during Measure 110 (after implementing) to develop rehabliltation services.</h4>
         <span class="btn-wrap">
-            <button onclick="scorer('sp', '1')">A</button>
-            <button onclick="scorer('cp', '1')">B</button>
+            <button onclick="scorer('success', '1')">A</button>
+            <button onclick="scorer('fail', '1')">B</button>
         </span>
     </div>
 
     <div class="q-wrap" id="q-2" style="display: none;">
         <h1>Question 2</h1>
-        <h4>A. Instruct officers to hand out $100 fines to people who use drugs. This fine can be avoided by calling provided resources and any money recieved pays for rehab development</h4>
-        <h4>B. Require people who use drugs to attend counsiling and rehab by court order</h4>
+        <h4>A. Instruct officers to hand out $100 fines to people who use drugs. This fine can be avoided by calling provided resources.</h4>
+        <h4>B. Require people who use drugs to attend counsiling and rehab by court order.</h4>
         <span class="btn-wrap">
-            <button onclick="scorer('sp', '2')">A</button>
-            <button onclick="scorer('cp', '2')">B</button>
+            <button onclick="scorer('success', '2')">A</button>
+            <button onclick="scorer('fail', '2')">B</button>
         </span>
     </div>
     <div class="q-wrap" id="q-3" style="display: none;">
         <h1>Question 3</h1>
-        <h4>A. Invest $50,0000 to develop an officer training course on how to effectivly help people who use drugs</h4>
-        <h4>B. Allocate $50,000 spread across various costs including rehab development and Portland officials salary increases</h4>
+        <h4>A. Invest $50,0000 to develop an officer training course on how to effectivly help people who use drugs.</h4>
+        <h4>B. Allocate $50,000 spread across various costs including rehab development, Portland officials salary increase, and prison development</h4>
         <span class="btn-wrap">
-            <button onclick="scorer('sp', '3')">A</button>
-            <button onclick="scorer('cp', '3')">B</button>
+            <button onclick="scorer('success', '3')">A</button>
+            <button onclick="scorer('fail', '3')">B</button>
         </span>
     </div>
     <div class="q-wrap" id="q-4" style="display: none;">
         <h1>Question 4</h1>
-        <h4>A. Develop modified prisons designed to promote rehabliltation and counsiling (for those who need to be jailed)</h4>
-        <h4>B. Send all drug users and criminals to the same types of prisons (Current prison system)</h4>
+        <h4>A. Develop modified prisons designed to promote rehabliltation and counsiling (for those who need to be jailed).</h4>
+        <h4>B. Send all drug users and criminals to the same types of prisons (Current prison system).</h4>
         <span class="btn-wrap">
-            <button onclick="scorer('sp','4')">A</button>
-            <button onclick="scorer('cp', '4')">B</button>
+            <button onclick="scorer('success','4')">A</button>
+            <button onclick="scorer('fail', '4')">B</button>
         </span>
     </div>
     <div class="q-wrap" id="q-5" style="display: none;">
         <h1>Question 5</h1>
-        <h4>A. Increase funding for BHRN partner resources</h4>
-        <h4>B. Increase funding for policing efforts in high drug use areas of Portland (police salary, more hours)</h4>
+        <h4>A. Increase funding for BHRN (Behavioral Health Resource Networks) partner resources. These resources include health screenings, harm reduction, peer support, housing support, and more.</h4>
+        <h4>B. Increase funding for policing efforts in high drug use areas of Portland. This funding will increase officer salaries and targeted surveillance.</h4>
         <span class="btn-wrap">
-            <button onclick="scorer('sp' ,'5')">A</button>
-            <button onclick="scorer('cp', '5')">B</button>
+            <button onclick="scorer('success' ,'5')">A</button>
+            <button onclick="scorer('fail', '5')">B</button>
         </span>
     </div>
 
+
+
+
     <div id="img-wrap" style="display: none;">
-        <img src="/static/postcards/success.jpg" alt="postcard" style="display: none;" id="g-post">
-        <img src="/static/postcards/fail.jpg" alt="postcard" style="display: none;" id="b-post">
+        <img src="/static/postcards/success.jpg" alt="postcard" style="display: none;" id="s-post">
+        <img src="/static/postcards/fail.jpg" alt="postcard" style="display: none;" id="f-post">
+
+        <div id="success-text" style="display: none;">
+            <h4>Congrats! You did better at implementing Measure 110 than the Portland officials who failed to properly plan. If Measure 110 was enacted with the desicions you've made, Portland would be a better place!</h4>
+        </div>
+        <div id="fail-text" style="display: none;">
+            <h4>Unfortunetly you made similar desicions that Portland made when implementing Measure 110. Measure 110 can fix Portland with proper planning and the correct choices. You may try again and try fix Portland once and for all! </h4>
+        </div>
+        <h4>Share this image on your socials to spread information about Measure 110.</h4>
+        <ol>
+            <li>Tap and Hold on image</li>
+            <li>Share or Save to Photos</li>
+        </ol>
         <span class="btn-wrap" style="display: none;">
             <button><a href="" download="" id="download-btn">Download</a></button>
         </span>
+        <button><a href=".">Restart</a></button>
     </div>
     
 </body>
