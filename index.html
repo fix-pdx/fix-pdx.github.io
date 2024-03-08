@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Measure 110</title>
+    <script src="/static/app.js" defer></script>
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Measure 110</h1>
+
+    <div class="intro-wrap" id="q-0">
+        <h1>Measure 110</h1>
+        <p>Measure 110 is a law that was passed in Portland OR back in 2020. This law decriminilzed possession of drugs. Portlanders throughout the city have expressed their dissatisfaction with how Portland implemented this law. It is now your job as the new Mayor to implement Measure 110 effectivly.</p>
+        <span class="btn-wrap">
+            <button onclick="scorer('begin', '0')">Begin</button>
+        </span>
+    </div>
+
+    <div class="q-wrap" id="q-1" style="display: none;">
+        <h1>Question 1</h1>
+        <h4>A. Spend money to develop rehabliltation services before implementing Measure 100</h4>
+        <h4>B. Spend money during Measure 110 (after implementing), to develop rehabliltation services</h4>
+        <span class="btn-wrap">
+            <button onclick="scorer('sp', '1')">A</button>
+            <button onclick="scorer('cp', '1')">B</button>
+        </span>
+    </div>
+
+    <div class="q-wrap" id="q-2" style="display: none;">
+        <h1>Question 2</h1>
+        <h4>A. Instruct officers to hand out $100 fines to people who use drugs. This fine can be avoided by calling provided resources and any money recieved pays for rehab development</h4>
+        <h4>B. Require people who use drugs to attend counsiling and rehab by court order</h4>
+        <span class="btn-wrap">
+            <button onclick="scorer('sp', '2')">A</button>
+            <button onclick="scorer('cp', '2')">B</button>
+        </span>
+    </div>
+    <div class="q-wrap" id="q-3" style="display: none;">
+        <h1>Question 3</h1>
+        <h4>A. Invest $50,0000 to develop an officer training course on how to effectivly help people who use drugs</h4>
+        <h4>B. Allocate $50,000 spread across various costs including rehab development and Portland officials salary increases</h4>
+        <span class="btn-wrap">
+            <button onclick="scorer('sp', '3')">A</button>
+            <button onclick="scorer('cp', '3')">B</button>
+        </span>
+    </div>
+    <div class="q-wrap" id="q-4" style="display: none;">
+        <h1>Question 4</h1>
+        <h4>A. Develop modified prisons designed to promote rehabliltation and counsiling (for those who need to be jailed)</h4>
+        <h4>B. Send all drug users and criminals to the same types of prisons (Current prison system)</h4>
+        <span class="btn-wrap">
+            <button onclick="scorer('sp','4')">A</button>
+            <button onclick="scorer('cp', '4')">B</button>
+        </span>
+    </div>
+    <div class="q-wrap" id="q-5" style="display: none;">
+        <h1>Question 5</h1>
+        <h4>A. Increase funding for BHRN partner resources</h4>
+        <h4>B. Increase funding for policing efforts in high drug use areas of Portland (police salary, more hours)</h4>
+        <span class="btn-wrap">
+            <button onclick="scorer('sp' ,'5')">A</button>
+            <button onclick="scorer('cp', '5')">B</button>
+        </span>
+    </div>
+
+    <div id="img-wrap" style="display: none;">
+        <img src="/static/postcards/success.webp" alt="postcard" style="display: none;" id="g-post">
+        <img src="/static/postcards/fail.webp" alt="postcard" style="display: none;" id="b-post">
+        <span class="btn-wrap">
+            <button><a href="" download="" id="download-btn">Download</a></button>
+            
+            <button>Share</button>
+        </span>
+    </div>
+    
+</body>
+</html>

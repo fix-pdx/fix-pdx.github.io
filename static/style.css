@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.q-wrap{
+    background-color: rgb(209, 209, 209);
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.btn-wrap{
+    background-color: pink;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-wrap>button{
+    width: 125px;
+    height: 50px;
+    margin: 15px;
+}
+.intro-wrap{
+    background-color: red;
+}
+
+#img-wrap{
+    width: 100vw;
+    background-color: blue;
+}
+#img-wrap>img{
+    width: 100%;
+}
