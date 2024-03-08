@@ -13,12 +13,10 @@ const conclusion = () => {
         document.getElementById("g-post").style.display = "block"
         downloadBtn.href = "/static/postcards/success.jpg"
         downloadBtn.download = "success.jpg"
-        alert(`Success: ${success}`) 
     } else { 
         document.getElementById("b-post").style.display = "block"
         downloadBtn.href = "/static/postcards/fail.jpg"
         downloadBtn.download = "fail.jpg"
-        alert(`Fail: ${fail}`)
     }
     document.getElementById("q-5").style.display = "none"
 }
