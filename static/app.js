@@ -11,13 +11,13 @@ const conclusion = () => {
 
     if (success > fail){
         document.getElementById("g-post").style.display = "block"
-        downloadBtn.href = "/static/postcards/success.webp"
-        downloadBtn.download = "success.webp"
+        downloadBtn.href = "/static/postcards/success.jpg"
+        downloadBtn.download = "success.jpg"
         alert(`Success: ${success}`) 
     } else { 
         document.getElementById("b-post").style.display = "block"
-        downloadBtn.href = "/static/postcards/fail.webp"
-        downloadBtn.download = "fail.webp"
+        downloadBtn.href = "/static/postcards/fail.jpg"
+        downloadBtn.download = "fail.jpg"
         alert(`Fail: ${fail}`)
     }
     document.getElementById("q-5").style.display = "none"
