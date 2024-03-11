@@ -55,7 +55,7 @@ html{
 }
 
 .q-wrap>h4{
-    padding: 25px;
+    padding: 0px 5px 0px 5px;
 }
 .btn-wrap{
     /* background-color: pink; */
@@ -92,8 +92,12 @@ button{
     color: white;
     
 }
+.learn-link{
+    text-align: center;
+    color: white;
+}
 .intro-wrap>p{
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
 }
 .intro-wrap>span>h1{
     margin: 0px;
