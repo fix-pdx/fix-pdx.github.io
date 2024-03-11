@@ -1,15 +1,27 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    padding: 0px 10px 0px 10px;
-    height: 100vh;
+    /* padding: 0px 10px 0px 10px; */
+    height: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    background-color: rgb(50, 50, 50);
+    width: 100vw;
 
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: futura;
+    position: fixed;
+
+}
+html{
+    overflow: hidden;
+    max-width: 400px;
+    height: 100%;
 }
 
 #header{
@@ -17,17 +29,24 @@ body, html {
     top: 0;
 }
 .q-wrap{
-    background-color: rgb(209, 209, 209);
+    /* background-color: rgb(209, 209, 209); */
+    background-color: rgb(60, 60, 60, .5);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    color: white;
     /* margin: 50px 0px 50px 0px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 400px;
+    /* height: 400px; */
+    width: 90%;
     /* padding: 25px; */
 }
 .q-wrap>h1{
-    background-color: white;
+    background-color: #5B8266;
+    font-family: aima;
+    color: white;
     width: 100%;
     /* text-align: center; */
     margin: 0;
@@ -39,7 +58,7 @@ body, html {
     padding: 10px;
 }
 .btn-wrap{
-    background-color: pink;
+    /* background-color: pink; */
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -51,19 +70,36 @@ button{
 
     border-radius: 50px;
     border: 0px;
+    background-color: #5B8266;
+    color: white;
+    
+}
+
+#head-video{
+    width: auto; 
+    height: 100vh; 
+    position: absolute; 
+    z-index: -1;
 }
 .intro-wrap{
-    background-color: red;
-    height: 400px;
+    /* background-color: red; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    background-color: rgb(60, 60, 60, .5);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    color: white;
     
 }
 .intro-wrap>p{
     padding: 10px;
 }
-
+.intro-wrap>h1{
+    font-family: aima;
+    text-align: center;
+}
 #img-wrap{
     width: 100vw;
     display: flex;
@@ -76,4 +112,13 @@ button{
 #img-wrap>img{
     width: 90%;
     border: 2px solid red;
+}
+
+@font-face {
+    font-family: 'aima';
+    src: url("/static/fonts/Aima.ttf");
+}
+@font-face {
+    font-family: 'futura';
+    src: url("/static/fonts/futura.otf");
 }
