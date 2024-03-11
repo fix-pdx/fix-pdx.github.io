@@ -39,7 +39,7 @@ html{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
     width: 90%;
     /* padding: 25px; */
 }
