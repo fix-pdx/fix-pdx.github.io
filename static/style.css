@@ -55,7 +55,7 @@ html{
 }
 
 .q-wrap>h4{
-    padding: 10px;
+    padding: 25px;
 }
 .btn-wrap{
     /* background-color: pink; */
@@ -72,7 +72,6 @@ button{
     border: 0px;
     background-color: #5B8266;
     color: white;
-    
 }
 
 #head-video{
@@ -94,7 +93,7 @@ button{
     
 }
 .intro-wrap>p{
-    padding: 10px;
+    padding: 25px;
 }
 .intro-wrap>h1{
     font-family: aima;
@@ -105,15 +104,45 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* height: 400px; */
-    background-color: blue;
+    /* justify-content: center; */
+    background-color: rgb(60, 60, 60, .5);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    height: 100vh; 
+    overflow-x: hidden;
+    color:white;
 }
 #img-wrap>img{
-    width: 90%;
-    border: 2px solid red;
+    width: 75%;
+    border: 8px solid #5B8266;
+    margin: 50px 50px 0px 50px;
 }
-
+#img-wrap>button{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#share-info{
+    margin: 0px;
+    padding: 25px 25px 0px 25px !important;
+}
+#steps{
+    width: 100vw;
+    padding-left: 15px;
+}
+#img-wrap>h4{
+    padding: 25px;
+}
+#img-wrap>ol{
+    background-color: pink;
+}
+#fail-text{
+    padding: 25px;
+}
+#success-text{
+    padding: 25px;
+}
 @font-face {
     font-family: 'aima';
     src: url("/static/fonts/Aima.ttf");
