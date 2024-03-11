@@ -39,7 +39,7 @@ html{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* height: 400px; */
+    height: 100%;
     width: 90%;
     /* padding: 25px; */
 }
@@ -47,8 +47,8 @@ html{
     background-color: #5B8266;
     font-family: aima;
     color: white;
-    width: 100%;
-    /* text-align: center; */
+    width: 110%;
+    text-align: center;
     margin: 0;
     padding: 15px;
     /* border: 2px solid white; */
@@ -95,9 +95,16 @@ button{
 .intro-wrap>p{
     padding: 25px;
 }
-.intro-wrap>h1{
+.intro-wrap>span>h1{
+    margin: 0px;
+    padding: 0px;
+    height: 35px;
+}
+.intro-wrap>span>*{
     font-family: aima;
     text-align: center;
+
+
 }
 #img-wrap{
     width: 100vw;
